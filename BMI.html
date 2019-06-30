@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI</title>
+</head>
+<body>
+    <script>
+        let w = parseFloat(prompt("Nhập cân nặng theo kg "));
+        let h = parseFloat(prompt("Nhập chiều cao tính theo m"));
+        let b = w/(h*h);
+        alert("Chỉ số BIM là =" +b);
+        if (b<18.5){
+            alert("Underweight")
+        }else if (b<25.0){
+            alert("Normal")
+        }else if (b<30.0){
+            alert("Overweight")
+        }else {
+            alert("Obese")
+        }
+    </script>
+
+</body>
+</html>
